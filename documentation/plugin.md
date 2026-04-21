@@ -1,71 +1,24 @@
-# Plugin Documentation
+# mTLS SSLContext Plugin
 
-<!-- Use this page to document your plugin. Below is a suggested structure. -->
+Helper Plugin for initializing your HTTP client with a SSLContext that is populated with configuration to enable mTLS.<br>
 
-## Overview
+Mutual TLS (mTLS) is an extension of the TLS (Transport Layer Security) protocol that enhances security by requiring both the client and the server to authenticate themselves to each other before any data is exchanged. This ensures a bidirectional verification, making mTLS a popular choice for securing server-to-server communication and API endpoints, especially in microservices architectures where services need to securely communicate over a network.
 
-This is a sample plugin demonstrating an API call action. It fetches data from a time API endpoint.
+All Configuration input fields are in base64 encoded strings, all fields are required, these are:
+* Server certificate
+* Client private key
+* Client certificate
 
-## Dependencies
+Currently most settings are hardcoded, this might become configurable in the future.
+* the Keystore and Truststore use type <strong>PKCS12</strong>
+* The key factory is of type <strong>RSA</strong>
+* The Certificate Factory is of type <strong>X.509</strong>
 
-### Backend
+For more details see documentation [SSLContext Documentation](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/javax/net/ssl/SSLContext.html)
 
-```kotlin
-dependencies {
-    implementation("com.ritense.valtimoplugins:sample-plugin:0.0.1")
-}
-```
+## Source code
 
-### Frontend
+The source code is split up into 2 modules:
 
-```json
-{
-  "dependencies": {
-    "@valtimo-plugins/sample-plugin": "0.0.1"
-  }
-}
-```
-
-In your `app.module.ts`:
-
-```typescript
-import {
-    SamplePluginModule, samplePluginSpecification,
-} from '@valtimo-plugins/sample-plugin';
-
-@NgModule({
-    imports: [
-        SamplePluginModule,
-    ],
-    providers: [
-        {
-            provide: PLUGIN_TOKEN,
-            useValue: [
-                samplePluginSpecification,
-            ]
-        }
-    ]
-})
-```
-
-## Configuration
-
-List the plugin configuration properties and how to set them.
-
-| Property | Type   | Required | Description                          |
-|----------|--------|----------|--------------------------------------|
-| apiUrl   | string | Yes      | The URL of the time API to call      |
-
-## Actions
-
-### Time API test action
-
-Sends a GET request to the configured API URL and returns the timezone response.
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-|           |      |          |             |
-
-## Usage
-
-Explain how to use the plugin in a process, with examples if applicable.
+1. [Frontend](./../../frontend/projects/valtimo-plugins/mtls-sslcontext)
+2. [Backend](./)
