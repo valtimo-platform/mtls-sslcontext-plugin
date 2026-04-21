@@ -33,20 +33,20 @@ dockerCompose {
 }
 
 dependencies {
-    implementation("org.springframework.security:spring-security-config")
-    implementation("org.springframework.security:spring-security-web")
+    compileOnly("org.springframework.security:spring-security-config")
+    compileOnly("org.springframework.security:spring-security-web")
 
-    implementation("com.ritense.valtimo:core")
-    implementation("com.ritense.valtimo:plugin-valtimo")
-    implementation("com.ritense.valtimo:temporary-resource-storage")
-    implementation("com.ritense.valtimo:value-resolver")
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    compileOnly("com.ritense.valtimo:core")
+    compileOnly("com.ritense.valtimo:plugin-valtimo")
+    compileOnly("com.ritense.valtimo:temporary-resource-storage")
+    compileOnly("com.ritense.valtimo:value-resolver")
+    compileOnly("org.springframework.boot:spring-boot-starter-webflux")
+    compileOnly("org.springframework.boot:spring-boot-starter-data-jpa")
 
-    implementation("io.github.oshai:kotlin-logging-jvm:$kotlinLoggingVersion")
+    compileOnly("io.github.oshai:kotlin-logging-jvm:$kotlinLoggingVersion")
 
-    implementation("jakarta.inject:jakarta.inject-api:$jakartaInjectVersion")
-    implementation("jakarta.persistence:jakarta.persistence-api:$jakartaPersistenceVersion")
+    compileOnly("jakarta.inject:jakarta.inject-api:$jakartaInjectVersion")
+    compileOnly("jakarta.persistence:jakarta.persistence-api:$jakartaPersistenceVersion")
 
     implementation("com.squareup.okhttp3:okhttp:$okhttpVersion")
     implementation("com.squareup.moshi:moshi:$squareupMoshiVersion")
