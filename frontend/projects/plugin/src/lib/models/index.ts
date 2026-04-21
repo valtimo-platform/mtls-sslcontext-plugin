@@ -14,11 +14,4 @@
  * limitations under the License.
  */
 
-/*
- * Public API Surface of Xential plugin
- */
-
-export * from './lib/models';
-export * from './lib/mtls-sslcontext.plugin.module';
-export * from './lib/m-tls-sslcontext-plugin.specification';
-export * from './lib/components/mtls-sslcontextl-configuration/mtls-sslcontext-configuration.component';
+export * from './mtls-sslcontext-config';

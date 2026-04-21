@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-/*
- * Public API Surface of Xential plugin
- */
+import {PluginConfigurationData} from '@valtimo/plugin';
 
-export * from './lib/models';
-export * from './lib/mtls-sslcontext.plugin.module';
-export * from './lib/m-tls-sslcontext-plugin.specification';
-export * from './lib/components/mtls-sslcontextl-configuration/mtls-sslcontext-configuration.component';
+export interface MtlsSslcontextConfig extends PluginConfigurationData {
+    base64ServerCert: string;
+    base64PrivateKey: string;
+    base64ClientCert: string;
+}

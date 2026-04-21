@@ -1,5 +1,5 @@
 /*
- * Copyright 2015-2022 Ritense BV, the Netherlands.
+ * Copyright 2015-2025 Ritense BV, the Netherlands.
  *
  * Licensed under EUPL, Version 1.2 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,16 @@
  * limitations under the License.
  */
 
-/*
- * Public API Surface of Xential plugin
- */
+package com.ritense.valtimoplugins.mtlssslcontext.plugin
 
-export * from './lib/models';
-export * from './lib/mtls-sslcontext.plugin.module';
-export * from './lib/m-tls-sslcontext-plugin.specification';
-export * from './lib/components/mtls-sslcontextl-configuration/mtls-sslcontext-configuration.component';
+import com.ritense.plugin.PluginFactory
+import com.ritense.plugin.service.PluginService
+
+class MTlsSslContextPluginFactory(
+    pluginService: PluginService,
+) : PluginFactory<MTlsSslContextPlugin>(pluginService) {
+
+    override fun create(): MTlsSslContextPlugin {
+        return MTlsSslContextPlugin()
+    }
+}
