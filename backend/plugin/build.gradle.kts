@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 val jakartaInjectVersion: String by project
 val jakartaPersistenceVersion: String by project
 val kotlinLoggingVersion: String by project
@@ -63,7 +62,7 @@ dependencies {
     testImplementation("com.ritense.valtimo:process-document")
     testImplementation("com.ritense.valtimo:test-utils-common")
 
-    testImplementation( "org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
     testImplementation("org.mockito:mockito-core")

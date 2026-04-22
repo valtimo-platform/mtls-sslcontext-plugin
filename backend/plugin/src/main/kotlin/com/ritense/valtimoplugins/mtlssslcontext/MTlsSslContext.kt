@@ -5,6 +5,5 @@ import javax.net.ssl.SSLContext
 
 @PluginCategory("mtls-sslcontext-plugin")
 interface MTlsSslContext {
-
     fun createSslContext(): SSLContext
 }

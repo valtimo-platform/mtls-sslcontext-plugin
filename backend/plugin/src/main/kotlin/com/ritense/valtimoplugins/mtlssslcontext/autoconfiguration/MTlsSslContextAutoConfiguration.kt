@@ -23,9 +23,6 @@ import org.springframework.context.annotation.Bean
 
 @AutoConfiguration
 class MTlsSslContextAutoConfiguration {
-
     @Bean
-    fun httpClientPluginFactory(
-        pluginService: PluginService,
-    ) = MTlsSslContextPluginFactory(pluginService)
+    fun httpClientPluginFactory(pluginService: PluginService) = MTlsSslContextPluginFactory(pluginService)
 }

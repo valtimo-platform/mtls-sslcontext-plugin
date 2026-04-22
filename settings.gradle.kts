@@ -1,4 +1,4 @@
-rootProject.name = "valtimo-plugin-template"
+rootProject.name = "mtls-sslcontext-plugin"
 include(
     "backend",
     "backend:app",

@@ -22,8 +22,5 @@ import com.ritense.plugin.service.PluginService
 class MTlsSslContextPluginFactory(
     pluginService: PluginService,
 ) : PluginFactory<MTlsSslContextPlugin>(pluginService) {
-
-    override fun create(): MTlsSslContextPlugin {
-        return MTlsSslContextPlugin()
-    }
+    override fun create(): MTlsSslContextPlugin = MTlsSslContextPlugin()
 }
