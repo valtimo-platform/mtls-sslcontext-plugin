@@ -75,7 +75,7 @@ import {TeamsModule} from "@valtimo/teams";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {environment} from "../environments/environment";
 
-import {MtlsSslcontextPluginModule, mTlsSslcontextPluginSpecification,} from "@valtimo-plugins/mtls-sslcontext";
+import {MtlsSslcontextPluginModule, mTlsSslcontextPluginSpecification} from "@valtimo-plugins/mtls-sslcontext";
 
 export function tabsFactory() {
   return new Map<string, object>([
