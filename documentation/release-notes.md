@@ -2,14 +2,23 @@
 
 Overzicht van wijzigingen per versie van de mTLS SSLContext-plugin.
 
-## 6.0.0
-Geschikt gemaakt voor Valtimo 13.24.0 en ondergebracht in een eigen repository, met voorbeeldapplicatie en aparte documentatie.
+## 2.0.4
+Plugin-configuratie voor de Valtimo Configurator opgeschoond en verplaatst.
 
-## 5.0.1
-Geschikt gemaakt voor Valtimo 13.1.
+## 2.0.3
+Versie verhoogd na het toevoegen van Valtimo Configurator-metadata.
 
-## 5.0.0
-Geschikt gemaakt voor Valtimo 13.0.0.
+## 2.0.2
+Valtimo Configurator-metadata toegevoegd.
 
-## 1.0.0
-Eerste publieke release: mutual TLS-authenticatie voor HTTP-clients.
+## 2.0.1
+Ondergebracht in een eigen repository met voorbeeldapplicatie en aparte documentatie.
+
+## 1.0.1
+Plugin-interface en plugin-groep toegevoegd.
+
+## 0.0.2
+Functie toegevoegd om een SSLContext te maken.
+
+## 0.0.1
+Eerste release: mutual TLS-authenticatie voor HTTP-clients.
