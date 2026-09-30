@@ -2,6 +2,10 @@
 
 Overzicht van wijzigingen per versie van de mTLS SSLContext-plugin.
 
+## 2.0.6
+
+Ondersteuning voor Valtimo 13.48.0.
+
 ## 2.0.5
 
 Valtimo bijgewerkt naar versie 13.41.0.
